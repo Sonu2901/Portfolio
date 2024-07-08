@@ -1,9 +1,6 @@
 body{
-    background-image: url("62802.jpg");
-    color: white;
-    @media screen {
-        
-    }
+    background-color: black;
+    color: white; 
 }
 #photo{
     height: 200px;
@@ -65,126 +62,114 @@ nav ul li a:hover::after{
 #Work{
     margin-top: 80px;
 }
+#Contact{
+  margin-top: 300px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
 
-  
-  .card {
-    margin-top: 600px;
-    width: 70%;
-    padding: 30px 90px 90px 90px;
-    border: 6px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-    position: relative;
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contect-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid red;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color:#FFF;
+  transition: background 0.5s;
+}
+.btn:hover{
+  opacity: 0.7;
+}
+.btn.btn2{
+  display: inline-block;
+  background: red;
+}
+.contect-right form{
+  width: 100%;
+}
+form input, form textarea{
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0px;
+  color:#fff;
+  font-size: 18px;
+  display: list-item;
+  width: 400px;
+}
+nav .fa{
+  display: none;
+}
+  @media only screen and (max-width: 600px) {
     
-  }
-  
-  .card h2 {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 60px;
-    text-transform: uppercase;
-  }
-  
-  .card .row {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid: auto / auto auto;
-    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
-    grid-gap: 30px;
-  }
-  
-  .card .row .col {
-    position: relative;
-    width: 100%;
-    margin: 30px 20px 40px 0;
-    transition: 0.5s;
-  }
-  
-  .card .row .form-group {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    color: #ffffff;
-  }
-  
-  .card .row .form-group input,
-  .card .row .form-group textarea {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    font-size: 24px;
-    padding: 10px 0 10px 20px;
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    border-radius: 50px;
-  }
-  
-  .card .row .form-group label {
-    line-height: 40px;
-    color: #ffffff;
-    font-size: 24px;
-    margin: 0 0 0 30px;
-    display: block;
-    pointer-events: none;
-  }
-  
-  .row .col:nth-child(6) {
-    margin-top: 64px;
-  }
-  
-  .card .row .form-group input:focus,
-  .card .row .form-group textarea:focus {
-    border: 5px solid #ffffff;
-    transition: all 0.5s;
-  }
-  
-  .card .row input[type="submit"] {
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    height: 100%;
-    width: 50%;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 40px;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 45px;
-    transition: all 0.4s;
-  }
-  
-  .card .row input[type="submit"]:hover {
-    border: 5px solid rgba(255, 255, 255, 1);
-    color: #ffffff;
-    transition: all 0.4s;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .card .row {
-      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    nav .fa{
+      display: block;
+      font: 25px;
     }
-    
-    .card {
-      padding: 20px;
+    nav ul{
+      background: red;
+      position: fixed;
+      top: 0;
+      right: 0px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
     }
-    
-    .card h2 {
-      font-size: 34px;
+    nav ul li{
+      display: block;
+      margin: 25px;
     }
-    
-    .card .row input[type="submit"] {
-      width: 100%;
+    nav ul .fa{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
     }
-  }
-  @media only screen and (max-width: 700px) {
-    #ch{
-        display: hidden;
+    .about-col-1{
+      margin-bottom: 30px;
+      flex-basis:100%;
+    }
+    .about-col-2{
+      font-size: 14px;;
+    }
+    .contact-left,.contect-right{
+      flex-basis:100%;
     }
   }
   
